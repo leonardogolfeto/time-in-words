@@ -1,6 +1,6 @@
 ## BRAVI - The Time in words
 
-###Prerequisites
+### Prerequisites
 
 * Java jdk 1.8.x
 * Maven
