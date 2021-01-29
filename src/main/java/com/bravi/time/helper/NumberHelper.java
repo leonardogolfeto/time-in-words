@@ -1,5 +1,7 @@
 package com.bravi.time.helper;
 
+import com.bravi.time.exception.InvalidTimeException;
+
 public class NumberHelper {
 
     private NumberHelper() {
@@ -39,7 +41,11 @@ public class NumberHelper {
     };
 
     public static String textByNumber(Integer number){
-        return numbers[number];
+       try {
+           return numbers[number];
+       } catch (Exception ex) {
+           throw new InvalidTimeException("Invalid time format, EX: 11:59");
+       }
     }
 
 }
